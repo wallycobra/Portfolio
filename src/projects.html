@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./projectStyles.css">
+  <meta charset="UTF-8" />
+  <title>Warehouse Simulation Portfolio</title>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="logo">Wally Dev</div>
+
+  <nav class="nav-links">
+    <a href="./index.html">About</a>
+    <a href="./resume.html">Resume</a>
+    <a href="./projects.html">Projects</a>
+  </nav>
+  
+</header>
+  <main class="projects-page">
+
+  <section class="projects-header">
+    <h1>Projects</h1>
+    <p>
+      Interactive simulations, real-time 3D tools, and technical projects built with Unity, C#, Three.js, and modern web technologies.
+    </p>
+  </section>
+
+  <section class="project-list">
+
+    <article class="project-card">
+      <div class="project-visual">
+        <section id="warehouse-scene"></section>
+      </div>
+
+      <div class="project-content">
+        <p class="project-tag">Unity / C# / Three.js</p>
+        <h2>Warehouse Simulation</h2>
+        <p>
+          A real-time warehouse visualization featuring animated robotics,
+          spatial layouts, and browser-based 3D rendering for simulation-focused tools.
+        </p>
+
+        <div class="project-actions">
+          <a class="button" href="./warehouse.html">View Project</a>
+          <a class="secondary-button" href="#">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-visual">
+        <section id="chip8-scene"></section>
+      </div>
+
+      <div class="project-content">
+        <p class="project-tag">Unity / C# / Emulator</p>
+        <h2>CHIP-8 3D Emulator</h2>
+        <p>
+          A 3D CHIP-8 emulator built in Unity with CPU instruction decoding,
+          memory management, timers, input handling, sprite rendering, and classic ROM execution.
+        </p>
+
+        <div class="project-actions">
+          <a class="button" href="./chip8.html">View Project</a>
+          <a class="secondary-button" href="#">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+</main>
+
+  <script type="module" src="./warehouse.js"></script>
+  <script type="module" src="./chip8.js"></script>
+</body>
+</html>

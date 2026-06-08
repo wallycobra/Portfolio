@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <title>Warehouse Simulation Portfolio</title>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="logo">Wally Dev</div>
+
+  <nav class="nav-links">
+    <a href="./index.html">About</a>
+    <a href="./resume.html">Resume</a>
+    <a href="./projects.html">Projects</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-row hero-intro">
+
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        Unity / C# / Simulation Tools
+      </p>
+
+      <h1>Walter Buga</h1>
+
+      <p class="hero-summary">
+        I build interactive simulation tools,
+        real-time 3D visualizations,
+        and developer-focused systems that turn
+        complex technical data into polished,
+        usable software.
+      </p>
+
+      <div class="hero-cards">
+        <a class="hero-button" href="./resume.html">
+          Resume
+        </a>
+
+        <a class="hero-button" href="./project.html">
+          Projects
+        </a>
+        
+        <a class="hero-button" href="./project.html">
+          Contact 
+        </a>
+      </div>
+
+    </div>
+
+    <div class="hero-visual">
+          <div id="scene-container"></div>
+
+    </div>
+
+  </div>
+
+</section>
+<script type="module" src="./index.js"></script>
+</body>
+</html>
