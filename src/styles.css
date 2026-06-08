@@ -364,7 +364,6 @@ a {
   font-weight: 600;
 }
 
-/* Mobile styles */
 /* Mobile / Tablet Responsiveness */
 @media (max-width: 900px) {
   .navbar {
@@ -385,9 +384,7 @@ a {
     padding: 120px 20px 40px;
   }
 
-  .hero-row,
-  .project-card,
-  .resume-grid {
+  .hero-row {
     grid-template-columns: 1fr;
   }
 
@@ -405,13 +402,18 @@ a {
     line-height: 1.25;
   }
 
-  .hero-cards {
+  .hero-cards,
+  .project-actions,
+  .resume-actions {
     flex-direction: column;
     width: 100%;
   }
 
-  .hero-button {
+  .hero-button,
+  .button,
+  .secondary-button {
     width: 100%;
+    box-sizing: border-box;
   }
 
   .hero-visual {
@@ -424,33 +426,63 @@ a {
     padding: 120px 20px 48px;
   }
 
+  .projects-header {
+    margin-bottom: 32px;
+  }
+
   .projects-header h1,
   .resume-hero h1 {
     font-size: clamp(48px, 16vw, 72px);
   }
 
+  .projects-header p {
+    font-size: 17px;
+  }
+
   .project-card {
-    padding: 24px;
+    display: flex;
+    flex-direction: column;
     gap: 28px;
+    padding: 24px;
   }
 
   .project-visual {
+    width: 100%;
     height: 300px;
   }
 
-  .project-actions,
-  .resume-actions {
-    flex-direction: column;
+  .project-content {
+    width: 100%;
   }
 
-  .button,
-  .secondary-button {
-    width: 100%;
-    box-sizing: border-box;
+  .project-content h2 {
+    font-size: clamp(34px, 10vw, 52px);
+  }
+
+  .project-content p {
+    font-size: 16px;
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-sidebar {
+    order: 2;
+  }
+
+  .resume-main {
+    order: 1;
+  }
+
+  .resume-summary {
+    font-size: 18px;
+    line-height: 1.45;
   }
 
   .item-header {
     flex-direction: column;
+    align-items: flex-start;
     gap: 6px;
   }
 
@@ -472,7 +504,7 @@ a {
   .projects-page,
   .resume-page,
   .project-page {
-    padding-top: 32px;
+    padding: 32px 16px 40px;
   }
 
   .hero-intro,
@@ -480,8 +512,8 @@ a {
   .resume-hero,
   .resume-sidebar,
   .resume-main {
+    padding: 20px;
     border-radius: 22px;
-    padding: 22px;
   }
 
   .hero h1 {
@@ -493,9 +525,12 @@ a {
     font-size: 19px;
   }
 
-  .hero-visual,
-  .project-visual {
+  .hero-visual {
     height: 260px;
+  }
+
+  .project-visual {
+    height: 220px;
   }
 
   .project-content h2 {
@@ -504,6 +539,21 @@ a {
 
   .resume-summary {
     font-size: 18px;
+  }
+
+  .resume-item h3 {
+    font-size: 20px;
+  }
+
+  .resume-item li,
+  .resume-item p,
+  .resume-sidebar p,
+  .resume-sidebar li {
+    font-size: 15px;
+  }
+
+  .item-header span {
+    font-size: 13px;
   }
 
   .unity-wrapper {
