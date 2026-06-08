@@ -1,0 +1,111 @@
+.contact-page {
+  min-height: 100vh;
+  padding: 110px 64px 64px;
+
+  background:
+    radial-gradient(circle at 18% 18%, rgba(53, 88, 255, 0.07), transparent 30%),
+    radial-gradient(circle at 82% 72%, rgba(106, 125, 255, 0.05), transparent 34%),
+    #f5f7fc;
+
+  color: #111827;
+}
+
+.contact-hero,
+.contact-card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 28px;
+
+  box-shadow:
+    0 18px 60px rgba(15, 17, 21, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.contact-hero {
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.contact-hero h1 {
+  margin: 0 0 16px;
+
+  font-size: clamp(48px, 7vw, 84px);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+
+  color: #111827;
+}
+
+.contact-hero p {
+  max-width: 760px;
+
+  font-size: clamp(18px, 2vw, 26px);
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+
+  color: #4b5563;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.contact-card {
+  padding: 32px;
+}
+
+.contact-card h2 {
+  margin: 0 0 14px;
+
+  color: #4c63ff;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-card p,
+.contact-card a {
+  color: #111827;
+
+  font-size: 22px;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  color: #4c63ff;
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 96px 18px 32px;
+  }
+
+  .contact-hero,
+  .contact-card {
+    border-radius: 22px;
+  }
+
+  .contact-hero,
+  .contact-card {
+    padding: 24px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-card p,
+  .contact-card a {
+    font-size: 19px;
+  }
+}
