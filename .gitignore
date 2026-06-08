@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Node
+node_modules/
+
+# Temporary
+temp/
+tmp/
+
+# Environment
+.env
+
+# Mac
+.AppleDouble
+.LSOverride
