@@ -179,3 +179,48 @@
   transform: translateY(-2px);
   background: white;
 }
+
+@media (max-width: 768px) {
+  .resume-page {
+    padding: 96px 18px 32px;
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .resume-hero,
+  .resume-sidebar,
+  .resume-main {
+    border-radius: 22px;
+  }
+
+  .resume-hero,
+  .resume-sidebar,
+  .resume-main {
+    padding: 24px;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+  }
+
+  .secondary-button {
+    width: 100%;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .item-header span {
+    white-space: normal;
+  }
+
+  .resume-item h3 {
+    font-size: 20px;
+  }
+}
