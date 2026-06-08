@@ -363,3 +363,150 @@ a {
   font-size: 14px;
   font-weight: 600;
 }
+
+/* Mobile styles */
+/* Mobile / Tablet Responsiveness */
+@media (max-width: 900px) {
+  .navbar {
+    height: auto;
+    padding: 20px 24px;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 120px 20px 40px;
+  }
+
+  .hero-row,
+  .project-card,
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-intro {
+    padding: 28px;
+    gap: 32px;
+  }
+
+  .hero h1 {
+    font-size: clamp(56px, 18vw, 88px);
+  }
+
+  .hero-summary {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  .hero-cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-button {
+    width: 100%;
+  }
+
+  .hero-visual {
+    height: 360px;
+  }
+
+  .projects-page,
+  .resume-page,
+  .project-page {
+    padding: 120px 20px 48px;
+  }
+
+  .projects-header h1,
+  .resume-hero h1 {
+    font-size: clamp(48px, 16vw, 72px);
+  }
+
+  .project-card {
+    padding: 24px;
+    gap: 28px;
+  }
+
+  .project-visual {
+    height: 300px;
+  }
+
+  .project-actions,
+  .resume-actions {
+    flex-direction: column;
+  }
+
+  .button,
+  .secondary-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .item-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .item-header span {
+    white-space: normal;
+  }
+
+  .unity-wrapper {
+    height: 520px;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    position: relative;
+  }
+
+  .hero,
+  .projects-page,
+  .resume-page,
+  .project-page {
+    padding-top: 32px;
+  }
+
+  .hero-intro,
+  .project-card,
+  .resume-hero,
+  .resume-sidebar,
+  .resume-main {
+    border-radius: 22px;
+    padding: 22px;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+    letter-spacing: -0.055em;
+  }
+
+  .hero-summary {
+    font-size: 19px;
+  }
+
+  .hero-visual,
+  .project-visual {
+    height: 260px;
+  }
+
+  .project-content h2 {
+    font-size: 36px;
+  }
+
+  .resume-summary {
+    font-size: 18px;
+  }
+
+  .unity-wrapper {
+    height: 420px;
+  }
+}
